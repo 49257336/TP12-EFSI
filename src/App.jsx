@@ -18,7 +18,7 @@ function App() {
         <section className="game-layout" aria-label="Juego de adivinar banderas">
           <div className="play-area">
             <div className="intro">
-              <p className="eyebrow">GEOGRAFÍA / RONDA ILIMITADA</p>
+              <p className="eyebrow">ADIVINA LA BANDERA</p>
               <h1>¿De dónde es<br />esta bandera?</h1>
             </div>
             <Flag />
