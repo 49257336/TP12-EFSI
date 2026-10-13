@@ -1,0 +1,91 @@
+.guess-area {
+  margin-top: 22px;
+}
+
+.guess-prompt {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.guess-controls {
+  display: flex;
+  gap: 9px;
+}
+
+.guess-input {
+  flex: 1;
+  min-width: 0;
+  min-height: 50px;
+  padding: 10px 14px;
+  border: 1px solid #394344;
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 14px 'Trebuchet MS', sans-serif;
+}
+
+.guess-input::placeholder {
+  color: var(--muted);
+}
+
+.guess-submit {
+  min-width: 120px;
+  padding: 0 14px;
+  border: 1px solid var(--orange);
+  border-radius: 3px;
+  background: var(--orange);
+  color: #171d1f;
+  font: 700 13px 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.guess-submit:hover:not(:disabled) {
+  background: #ff9188;
+  transform: translateY(-1px);
+}
+
+.guess-input:focus-visible,
+.guess-submit:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
+
+.guess-input:disabled,
+.guess-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.guess-meta {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.feedback {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 420px) {
+  .guess-controls {
+    gap: 7px;
+  }
+
+  .guess-input {
+    padding-inline: 10px;
+  }
+
+  .guess-submit {
+    min-width: 108px;
+    padding-inline: 10px;
+    font-size: 13px;
+  }
+}

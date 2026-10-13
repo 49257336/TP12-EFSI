@@ -1,0 +1,65 @@
+.flag-stage {
+  position: relative;
+  min-height: 270px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #394344;
+  background-color: #1c2426;
+  background-image: radial-gradient(#344041 0.7px, transparent 0.7px);
+  background-size: 16px 16px;
+  animation: arrive 600ms 80ms ease-out both;
+}
+
+.country-flag {
+  display: block;
+  width: min(66%, 390px);
+  height: 190px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 15px rgb(0 0 0 / 30%));
+  animation: flag-in 450ms ease-out both;
+}
+
+.stage-index {
+  position: absolute;
+  right: 17px;
+  bottom: 14px;
+  color: var(--muted);
+  font: 11px/1 'Trebuchet MS', sans-serif;
+}
+
+.stage-message {
+  max-width: 80%;
+  color: var(--ink);
+  font-size: 15px;
+  text-align: center;
+}
+
+.error-message {
+  color: var(--orange);
+}
+
+@keyframes flag-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 760px) {
+  .flag-stage {
+    min-height: 225px;
+  }
+
+  .country-flag {
+    height: 160px;
+  }
+}
+
+@media (max-width: 420px) {
+  .flag-stage {
+    min-height: 195px;
+  }
+
+  .country-flag {
+    height: 140px;
+  }
+}

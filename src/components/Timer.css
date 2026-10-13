@@ -1,0 +1,39 @@
+.timer-panel {
+  width: 100%;
+  padding: 0;
+}
+
+.timer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timer-heading .eyebrow {
+  margin: 0;
+}
+
+.timer-value {
+  color: var(--ink);
+  font: 700 14px 'Trebuchet MS', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-track {
+  height: 4px;
+  margin-top: 9px;
+  overflow: hidden;
+  background: #343d3e;
+}
+
+.timer-track span {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+  transition: width 300ms linear;
+}
+
+.timer-caption {
+  display: none;
+}

@@ -1,0 +1,47 @@
+.score-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.panel-heading .eyebrow {
+  margin: 0;
+  color: var(--orange);
+}
+
+.score-value {
+  margin: 0;
+  color: var(--ink);
+  font: 500 28px/1 Georgia, 'Times New Roman', serif;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.score-value span {
+  color: var(--orange);
+  font: 700 12px 'Trebuchet MS', sans-serif;
+}
+
+.score-caption {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .score-panel {
+    gap: 7px;
+  }
+
+  .score-value {
+    font-size: 24px;
+  }
+}
