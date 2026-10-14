@@ -10,12 +10,12 @@ function App() {
   return (
     <GameProvider>
       <main className="game-shell">
-        <header className="game-status-header" aria-label="Estado de la partida">
+        <header className="game-status-header">
           <ScoreBoard />
           <Timer />
           <Hint />
         </header>
-        <section className="game-layout" aria-label="Juego de adivinar banderas">
+        <section className="game-layout">
           <div className="play-area">
             <div className="intro">
               <p className="eyebrow">ADIVINA LA BANDERA</p>

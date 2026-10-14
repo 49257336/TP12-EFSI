@@ -6,7 +6,7 @@ function Hint() {
 	const hintComplete = hint && !hint.includes('•');
 
 	return (
-		<section className="hint-widget" aria-label="Pista">
+		<section className="hint-widget" >
 			<button
 				className="hint-button"
 				type="button"
@@ -15,7 +15,7 @@ function Hint() {
 			>
 				<span aria-hidden="true">＋</span> Pista
 			</button>
-			{hint && <p className="hint-text" aria-live="polite">Completa: <strong>{hint}</strong></p>}
+			{hint && <p className="hint-text" >Completa: <strong>{hint}</strong></p>}
 		</section>
 	);
 }

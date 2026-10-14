@@ -6,10 +6,10 @@ function Timer() {
   const progress = `${(timer / 30) * 100}%`;
 
   return (
-    <section className="timer-panel" aria-label="Tiempo restante">
+    <section className="timer-panel">
       <div className="timer-heading">
         <p className="eyebrow">TIEMPO RESTANTE</p>
-        <p className="timer-value" aria-live="polite">00:{String(timer).padStart(2, '0')}</p>
+        <p className="timer-value" >00:{String(timer).padStart(2, '0')}</p>
       </div>
       <div className="timer-track" role="progressbar" aria-valuemin="0" aria-valuemax="30" aria-valuenow={timer}>
         <span style={{ width: progress }} />
